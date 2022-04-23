@@ -10,6 +10,8 @@ name: Publish Docker image
 on:
   release:
     types: [published]
+  push:
+    branches: ['release']    
 
 jobs:
   push_to_registries:
